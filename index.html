@@ -12,7 +12,7 @@
         position: relative;
       }
 
-      .center{
+      .center {
         max-width: 700px;
         margin: 0;
         position: absolute;
@@ -21,20 +21,24 @@
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
       }
-      @media screen and (max-width: 479px) {
-        .center{
-          width: 90%;
-          margin: 0 auto;
-          top: 0;
-          left: 0;
-          -ms-transform: translate(0, 0);
-          transform: translate(0, 0);
+      .small-media {
+        display:none;
+      }
+      @media screen and (max-width: 599) {
+        .main {
+          display: none;
+        }
+        .small-media {
+          display:block;
         }
       }
     </style>
   </head>
 
   <body>
+    <div class="small-media">
+      <p>Screen size unsupported. Please visit this website on a tablet or larger screen.</p>
+    </div>
     <div class="main">
       <div class="center">
         <h1>Hi, I'm Jesen!</h1>
