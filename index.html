@@ -6,6 +6,7 @@
       h1 {
         font-size:1.5rem;
       }
+
       .main {
         width: 100vw;
         height: 100vh;
@@ -21,11 +22,16 @@
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
       }
+
       .small-media {
         display:none;
       }
-      @media screen and (max-width: 599) {
+
+      @media screen and (max-width: 599px) {
         .main {
+          display: none;
+        }
+        .center {
           display: none;
         }
         .small-media {
@@ -39,6 +45,7 @@
     <div class="small-media">
       <p>Screen size unsupported. Please visit this website on a tablet or larger screen.</p>
     </div>
+
     <div class="main">
       <div class="center">
         <h1>Hi, I'm Jesen!</h1>
